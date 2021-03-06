@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <TableView fx:id="marks" prefHeight="600.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="sid" prefWidth="75.0" text="SID" />
+            <TableColumn fx:id="assignments" prefWidth="100.0" text="ASSIGNMENTS" />
+            <TableColumn fx:id="midterm" prefWidth="75.0" text="MIDTERM" />
+            <TableColumn fx:id="final_exam" prefWidth="100.0" text="FINAL EXAM" />
+            <TableColumn fx:id="final_mark" prefWidth="100.0" text="FINAL MARK" />
+            <TableColumn fx:id="letter_grade" prefWidth="100.0" text="LETTER GRADE" />
+        </columns>
+    </TableView>
+</GridPane>
