@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="center" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <MenuBar fx:id="menuBar">
+        <menus>
+            <Menu text="File">
+                <items>
+                    <MenuItem text="New" onAction="#handleNew"/>
+                    <MenuItem text="Open" onAction="#handleOpen"/>
+                    <MenuItem text="Save" onAction="#handleSave"/>
+                    <MenuItem text="Save As" onAction="#handleSaveAs"/>
+                    <SeparatorMenuItem  />
+                    <MenuItem text="Exit" onAction="#handleExit"/>
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+    <TableView fx:id="marks" prefHeight="600.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="sid" prefWidth="75.0" text="SID" />
+            <TableColumn fx:id="assignments" prefWidth="100.0" text="ASSIGNMENTS" />
+            <TableColumn fx:id="midterm" prefWidth="75.0" text="MIDTERM" />
+            <TableColumn fx:id="final_exam" prefWidth="100.0" text="FINAL EXAM" />
+            <TableColumn fx:id="final_mark" prefWidth="100.0" text="FINAL MARK" />
+            <TableColumn fx:id="letter_grade" prefWidth="100.0" text="LETTER GRADE" />
+        </columns>
+    </TableView>
+</VBox>
